@@ -8,11 +8,11 @@ connectDB();
 
 app.use(express.json());
 app.get("/", (req, res) => {
-  res.send(`Server is up and runing on port ${process.env.PORT}`);
+  res.send(`Server is up and running on port ${process.env.PORT}`);
 });
 
 app.use("/api/user", userRoutes);
 
 app.listen(process.env.PORT, () => {
-  console.log(`Server is up and runing on port ${process.env.PORT}`);
+  console.log(`Server is up and running on port ${process.env.PORT}`);
 });
